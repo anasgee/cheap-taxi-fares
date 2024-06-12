@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+:root{
+    --input_color:#2e2e2e;
+    --right_div_color:#191919;
+    --button_color:#fdab04;
+    --deals_button_bg:#F1F1F1;
+}
+
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    /* opacity: 1; */
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.form-select {
+    color: white !important;
+}
+form input::placeholder{
+color: white;
+}
+
+/* Input for checkbox old code */
+
+     
+
+       
+
+         input[type=checkbox]{
+            width: 20px!important;
+            height: 20px!important;
+            cursor: pointer!important;
+            background: rgba(200, 200, 200, 0)!important;
+            color:black!important;
+            -webkit-appearance: none!important;
+            -moz-appearance: none!important;
+             border: 1px solid #F1F64C!important;
+             appearance: none!important;
+             border-radius: 50%!important;
+             margin-right: 10px!important;
+             /* margin-top: x!important; */
+    
+}
+
+        input[type=checkbox]:checked {
+            background: #F1F64C!important;
+        }
+        input[type=checkbox]:before{
+            display: none!important;
+        }
+        input[type=checkbox]:checked:before{
+            display: none!important;
+        }
+
+        input[type="text"]{
+            border: 1px solid var(--deals_button_bg)!important;
+        }
+        input[type="email"]{
+            border: 1px solid var(--deals_button_bg)!important;
+        }
+        input[type="number"]{
+            border: 1px solid var(--deals_button_bg)!important;
+        }
+        input[type="datetime-local"]{
+            border: 1px solid var(--deals_button_bg)!important;}
+        input[type="password"]{
+            border: 1px solid var(--deals_button_bg)!important;
+        }
+       body select{
+            border: 1px solid var(--deals_button_bg)!important;
+
+        }
+
+/* Deals input */
+.checkbox input[type="checkbox"]{
+    background: var(--deals_button_bg)!important;
+    border-radius: 0px!important;
+    border: none!important;
+}
+.checkbox input[type="checkbox"]:checked{
+   background: var(--button_color)!important;
+    border-radius: 50%!important;
+
+}
+
+.email_input input[type="checkbox"]{
+    border-radius: 0px!important;
+    border: 1px solid var(--input_color)!important;
+}
+table tr td, table tr th{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none;
+}
+
+.booking_table{
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.booking_details td{
+    border-left: 1px solid var(--button_color);
+    
+}
+
+
+.booking_details {
+    border-collapse:separate; 
+    border-spacing: 0 2rem;
+    padding-top: 10px; 
+    padding-bottom:10px
+
+
+  }
+.border-left{
+    border-left: 1px solid var(--button_color);
+    
+} 
+.border-left p{
+    font-size: 12px;
+}
+/* price btn */
+.price_button{
+    position: relative;
+}
+.price_button .arrow{
+    position: absolute;
+    right: 10px;
+}
+.logout{
+    color: var(--button_color);
+}
+.signout_btn{
+    background: var(--deals_button_bg);
+    border:2px solid var(--button_color);
+}
+
+
+#flightNumber{
+    display: none;
+}
+        /* input */
+.upper{
+    background: white;
+    margin: -20px -20px 20px;
+}
+
+.navbar-toggler{
+    color: var(--button_color)!important;
+    background: var(--button_color);
+}
+#navbar {
+    color: var(--button_color)!important;
+}
+
+input {
+    border: none !important;
+}
+
+select {
+    border: none !important;
+    overflow: hidden;
+}
+
+.myModal{
+    background: var(--right_div_color)!important;
+}
+
+
+.custom-modal-width .modal-dialog {
+    width: 80vw; /* Custom width */
+    max-width: none; /* Override Bootstrap max-width */
+}
+.close{
+    right: 10px;
+    position: absolute;
+    z-index: 1;
+}
+#hero{
+    min-height: 90vh;
+}
+#hero_cta {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../assets/navBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    color: white;
+  
+}
+
+
+.right_div_top {
+    text-align: center;
+
+}
+textarea{
+    resize: none;
+}
+.right_div {
+    background: var(--right_div_color);
+    color: white;
+    text-align: center;
+
+
+}
+.account_pic{
+    border: 3px solid yellowgreen;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    background: var(--button_color);
+}
+.heading{
+    font-size: 4rem;
+    color: var(--button_color);
+}
+h2{
+    font-size: 3.5rem;
+    color: var(--button_color);
+}
+
+h1{
+    font-weight: bolder!important;
+    font-size: 3.5rem!important;
+}
+/* Fares */
+.double_lines{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-top: -13rem;
+    margin-left: 10rem;
+}
+.vr{
+    /* border: 1px solid black!important; */
+    width: 1px!important;
+}
+
+#app{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../assets/navBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+
+#confidence{
+    height:auto;
+}
+
+span{
+    color: var(--button_color);
+}
+
+/* Customer Reviews */
+#customer{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../assets/navBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+}
+
+.reviews-container{
+    margin-top: -100px;
+    margin-bottom:200px;
+}
+.dp{
+    width: 5rem;
+    border-radius:50% ;
+
+}
+
+.quotes{
+    background: url('../assets/quotes.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 60px;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Pills Tab         // Navigation Tabs  */
+
+#pills-tab .active{
+    background: var(--button_color);
+}
+#pills-tab button{
+    background: var(--deals_button_bg);
+}
+#pills-tab button select{
+    background: var(--deals_button_bg);
+}
+#pills-tab button select option{
+    background: var(--deals_button_bg);
+}
+
+.childCta{
+    background: var(--button_color);
+}
+
+
+
+/* DropDown Hover */
+.dropdown:hover .dropdown-menu{
+    display: block!important;
+}
+/* DropDown End */
+
+
+
+
+
+
+
+/* Footer */
+
+
+/* Footer parent */
+.parent{
+    background: black;
+   padding-top: 1rem;
+    color: white ;   
+}
+
+.parent a{
+    color: white;
+}
+.parent ul{
+    list-style-type: none;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+     /* padding: rem;  */
+     margin-top: 1rem;
+    font-size: 2rem; 
+}
+.social-icons i{
+    width: 50px;
+    height: 50px;
+}
+.footer_low{
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+    background: var(--button_color);
+    /* position: relative; */
+    color: #000;
+    /* height: auto; */
+    
+}
+.footer-links{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.right_low_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.social-icons li a .fa{
+    background: white;
+    color: var(--button_color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.right_low_footer .copyright-text{
+    font-size: 14px;
+    margin-top: 1rem;
+    color: white;
+}
+.paragraph{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Sign in or sign up links */
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 3rem!important;
+    }
+}
+@media screen and (max-width:480px){
+    .double_lines{
+        margin-left: 0;
+
+    }
+    .col-sm-0{
+        display: none!important;
+    }
+}
+

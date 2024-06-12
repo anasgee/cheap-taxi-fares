@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/b4408dd41e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav_container" id="hero_cta">
+        <nav class="navbar navbar-expand-lg p-3" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="w-75" src="./assets/cheapRate_logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Track Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./public/aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./public/bookings.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                    <button class="btn rounded rounded-4 nav-link p-2 text-dark "data-toggle="modal" data-target="#myModal"  style="background: #fdab04; width: 130px"
+                        >Sign Up</button>
+                </div>
+            </div>
+        </nav>
+<!-- Sign Up Modal -->
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog p-5 modal-dialog-centered custom-modal-width modal-lg ">
+
+        <div class="modal-content myModal">
+            <button type="button" class="close bg-transparent text-dark border-0" data-dismiss="modal">&times;</button>
+           
+                <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                    <h3 class="fw-bold">Create your Account </h3>
+                    <div class="right_div border rounded-bottom p-5">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+
+                           
+                                <form>
+                                    <div class="form-group right_div_top">
+                                        <input type="text" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="name" aria-describedby="emailHelp" placeholder="First Name">
+                                      </div>
+                                      <div class="form-group right_div_top">
+                                        <input type="email" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                      </div>
+                                      <div class="form-group">
+                                        <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="Password">
+                                      </div>
+                                      
+
+                                    
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input style="background: #2e2e2e" type="text" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="lname" placeholder="Last Name">
+                                      </div>
+                                      <div class="form-group mt-2">
+                                        <select class="form-select text-white p-3 rounded rounded-5"
+                                            style="background-color: #2e2e2e"
+                                            aria-label="Default select example">
+                                            <option selected>Personal</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                  
+                                      <div class="form-group">
+                                        <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="Confirm Password">
+                                      </div>
+                                      
+                                </form>
+                            </div>
+                        </div>
+                            
+                        <div>
+                            <form action="">
+                                <div style="text-align: center;" >
+                            
+                                    <div class="d-flex justify-content-start align-items-center mt-3 ">
+                                        <input type="checkbox" name="" id="" value="Yes" >
+                                        <label for="">Accept Terms and Conditions</label>
+                                    </div>
+                                    <br>
+    
+                                    </div>
+                            </form>
+                        </div>
+                            <a class="btn rounded rounded-5 p-3 w-75 fw-bold mt-3" href="#">Sign Up</a>
+                            <p class="mt-3">Already have an account ?<button style="background: transparent;" class="border-0" data-toggle="modal" data-target="#myModal2" id="login_modal"> <span>Login</span></button></p>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<!--  -->
+<!-- Login Modal -->
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog p-5 modal-dialog-centered custom-modal-width  ">
+
+        <div class="modal-content myModal">
+            <button type="button" class="close bg-transparent text-dark border-0" data-dismiss="modal">&times;</button>
+           
+                <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                    <h3 class="fw-bold">Login to your account </h3>
+                    <div class="right_div border rounded-bottom p-5">
+                        <p>Log in to continue</p>
+                        <div class="row">
+                            
+                           <form action="">
+                            <div class="form-group right_div_top">
+                                <input type="email" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="razatechtube@gmail.com">
+                              </div>
+                              <div class="form-group">
+                                <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="*******">
+                              </div>
+                           </form>
+                        </div>
+                            
+                        <div>
+                            <form action="">
+                                <div style="text-align: center;" >
+                            
+                                    <div class="d-flex justify-content-start align-items-center mt-3 ">
+                                        <input type="checkbox" name="" id="" value="Yes" >
+                                        <label for="">Accept Terms and Conditions</label>
+                                    </div>
+                                    <br>
+                                    </div>
+                            </form>
+                        </div>
+                            <a class="btn rounded rounded-5 p-3 w-75 fw-bold mt-3" href="./public/home.html">login</a>
+                            <p class="mt-3">Don't have taxicode account?<button style="background: transparent;" class="border-0" data-toggle="modal" data-target="#myModal"> <span>sign up</span></button></p>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Advanced Quote Modals -->
+
+
+
+<!-- Advanced Quote Modal End -->
+<!-- Sign Up End -->
+        <!-- Hero Section -->
+
+        <div class="container-fluid d-flex justify-content-center align-items-center" id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-start flex-column">
+                        <h1 class="fw-bolder heading ">Make Your</h1>
+                        <h2 class="fw-bolder  ">Booking</h2>
+                        <p class="fw-bold mt-2">
+                            Our taxis commit to make your trips unique by best answering
+                            your needs.
+                        </p>
+                        <div class="contact d-flex align-items-center justify-content-left">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#FDAB04" />
+                                <path
+                                    d="M13.0011 19.2414C13.0011 20.2879 13.3849 21.4382 13.8725 22.6588C14.36 23.8794 14.9881 25.0297 15.4768 25.9011C16.8022 28.2028 18.5103 30.4689 20.4627 32.3511C22.4152 34.2333 24.7168 35.8031 27.2962 36.7448C28.7957 37.3373 30.2952 38 31.9687 38C32.8054 38 33.9914 37.6865 35.0714 37.2324C36.1179 36.7794 37.0584 36.0821 37.4076 35.2453C37.547 34.9318 37.7211 34.5134 37.826 34.0247C37.9308 33.5717 38 33.1176 38 32.8041C38 32.63 38 32.4549 37.9654 32.4203C37.8605 32.2105 37.6162 32.0365 37.3373 31.8624C36.7092 31.5489 36.6054 31.444 35.6638 30.8862C34.6876 30.3283 33.6768 29.7001 32.8043 29.2472C32.3859 29.0028 32.107 28.8979 32.0021 28.8979C31.4443 28.8979 30.747 29.6656 30.1546 30.5023C29.5265 31.3391 28.8292 32.1068 28.3416 32.1068C28.0973 32.1068 27.853 32.0019 27.574 31.8278C27.2951 31.6538 27.0162 31.5143 26.8422 31.4094C23.7741 29.6656 21.7168 27.6093 19.9741 24.5756C19.7643 24.2264 19.2768 23.4945 19.2768 23.1107C19.2768 22.6577 19.9049 22.1344 20.5319 21.5766C21.1243 21.0533 21.7525 20.4262 21.7525 19.6586C21.7525 19.5538 21.6822 19.2402 21.5427 18.7873C21.2292 17.8802 20.8108 16.8347 20.4616 15.8239C20.2876 15.3352 20.1481 14.9871 20.1124 14.813C20.0421 14.7082 20.0075 14.5687 19.973 14.3947C19.9384 14.2206 19.8681 14.0811 19.8335 13.9417C19.7286 13.6282 19.5546 13.3838 19.3805 13.2443C19.2065 13.1741 18.7881 13.0703 18.3697 13.0346C17.9514 13.0346 17.4627 13 17.2541 13C17.1492 13 17.0097 13 16.8703 13.0346H16.4173C15.3016 13.5233 14.4995 14.4995 13.907 15.6498C13.3492 16.8002 13 18.091 13 19.2414H13.0011Z"
+                                    fill="black" />
+                            </svg>
+                            <p class="mt-3 mx-2">Book by Phone <b>0333 7772 9737</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                            <h1>Get Your Quotes</h1>
+                            <div class="right_div border rounded-bottom p-5">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <form>
+                                            <div class="mb-3">
+                                                <select class="form-select text-white p-3 rounded rounded-5"
+                                                    style="background-color: #2e2e2e"
+                                                    aria-label="Default select example">
+                                                    <option selected>One Way</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 d-flex" style="position: relative">
+                                                <input type="datetime-local" style="background: #2e2e2e"
+                                                    class="form-control text-white p-3 rounded rounded-5" id="#"
+                                                    placeholder="Date / ASAP" />
+
+                                               
+                                            </div>
+
+                                            <div class="mb-3 d-flex">
+                                                <input type="text" style="background: #2e2e2e"
+                                                    class="form-control text-white p-3 rounded rounded-5" id="#"
+                                                    placeholder="Picking PostCode" />
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <form action="">
+                                            <div class="mb-3 d-flex" style="position: relative">
+                                                <input type="text" style="background: #2e2e2e"
+                                                    class="form-control text-white p-3 rounded rounded-5" id="#"
+                                                    placeholder="Via - Optional" />
+                                                <svg style="position: absolute; right: 20px; top: 20px" width="13"
+                                                    height="16" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6.28571 0C2.81443 0 0 2.6865 0 6C0 7.30475 0.448119 8.502 1.19298 9.4825C1.20633 9.506 1.20843 9.53225 1.22362 9.55475L5.41409 15.5548C5.60843 15.833 5.93581 16 6.28571 16C6.63562 16 6.963 15.833 7.15733 15.5548L11.3478 9.55475C11.3633 9.53225 11.3651 9.506 11.3785 9.4825C12.1233 8.502 12.5714 7.30475 12.5714 6C12.5714 2.6865 9.757 0 6.28571 0ZM6.28571 8C5.12862 8 4.19048 7.1045 4.19048 6C4.19048 4.8955 5.12862 4 6.28571 4C7.44281 4 8.38095 4.8955 8.38095 6C8.38095 7.1045 7.44281 8 6.28571 8Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="mb-3">
+                                                <select class="form-select text-white p-3 rounded rounded-5"
+                                                    style="background-color: #2e2e2e"
+                                                    aria-label="Default select example">
+                                                    <option selected>1 Passenger</option>
+                                                    <option value="1">2 Passengers</option>
+                                                    <option value="2">3 Passengers</option>
+                                                    <option value="3">4 Passengers</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="mb-3 d-flex" >
+                                                <input type="text" style="background: #2e2e2e"
+                                                    class="form-control text-white p-3 rounded rounded-5" id="#"
+                                                    placeholder="Destination Postcode" />
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                    <div style="text-align: center;" >
+                                    
+                                        <div class="d-flex justify-content-center align-items-center mt-3 ">
+                                            <input type="checkbox" name="isAirportBooking" id="isAirportBooking" value="Yes" >
+                                            <label for="">Click! If it is an airport booking</label>
+                                        </div>
+                                        <br>
+    
+                                        </div>
+                                        <input class="text-white p-3 w-50 rounded rounded-5"  style="background-color: #2e2e2e" type="text" id="flightNumber" name="flightNumber"
+                                            class="rounded-input mt-2 hidden" placeholder="In bound Flight Number" />
+                                    <a class="btn rounded rounded-5 p-3 w-75 fw-bold mt-3" href="./public/getQuotes.html">Get Quotes</a>
+                                        <p class="mt-3 fw-bold">Complex Journey <a href="./public/advanceQuotes.html"  class="text-decoration-underline bg-transparent border-0  text-warning"><span>click here</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section End -->
+    </div>
+
+
+    <!-- Cheap Taxi Fares Benifits -->
+
+    <div class="container p-5">
+        
+        <h1 class="text-center p-5 fw-bolder h1 ">Cheap Taxi Fares</h1>
+        <div class="row d-flex justify-content-center align-items-center  ">
+            <div class="col-md-3 col-sm-12">
+                <div class="card bg-transparent border-0  text-center">
+                    <div class="card-body ">
+                        <img src="./assets/dollar.png" alt="">
+                        <h5 class="card-title fw-bold mt-4 mb-4">Fixed Price</h5>
+
+                        <p class="card-text">No surge pricing, no hidden
+                            costs. The price you see is
+                            the price you pay</p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-0">
+                <div class="d-flex" style="height: 200px;">
+                    <div class="vr"></div>
+                  </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="card bg-transparent border-0 text-center">
+                    <div class="card-body ">
+                        <img src="./assets/buisnessaccount.png" alt="">
+                        <h5 class="card-title fw-bold mt-4 mb-4">Buisness Accounts</h5>
+
+                        <p class="card-text">No surge pricing, no hidden
+                            costs. The price you see is
+                            the price you pay</p>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-0">
+                <div class="d-flex" style="height: 200px;">
+                    <div class="vr"></div>
+                  </div>
+            </div>
+        <div class="col-md-3 col-sm-12 ">
+            <div class="card bg-transparent border-0 text-center">
+                <div class="card-body ">
+                    <img src="./assets/customer.png" alt="">
+                    <h5 class="card-title  mt-4 mb-4 fw-bold">Customer Satisfaction</h5>
+
+                    <p class="card-text">No surge pricing, no hidden costs. 
+                        The price you see is the price
+                         you pay</p>
+                
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+<img class="double_lines " width="300px" src="./assets/double_lines.png" alt="">
+    </div>
+    </div>
+
+
+
+
+
+                                                  <!-- Cheap Taxi Fares Benifits End -->
+
+
+                                                                <!-- Get App Now -->
+ <div class="container-fluid" id="app">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center p-5">
+                                                    <!-- Left CTA APP -->
+            <div class="col-md-6 col-sm-12">
+                    <h1 class="text-white  mt-5">What Are You Waiting For, Get App Now!</h1>
+
+                    <div class="row d-flex justify-content-space-around align-items-center text-white mt-5">
+                        <div class="col-md-6 col-sm-12">
+                            <h5>FOR IOS</h5>
+                            <img class="w-50 mt-3" src="./assets/appstore.png" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                        <h5>FOR ANDROID</h5>
+                            <img class="w-50 mt-3 " src="./assets/playstore.png" alt="">
+                        </div>
+                    </div>
+            </div>
+                                                    <!-- Right CTA APP -->
+            <div class="col-md-6 col-sm-12">
+                    <img class="mt-5 w-100"  src="./assets/application.png" alt="Mobile Application">
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+                                                        <!-- Get App Now -->
+
+
+
+
+<!-- Driving confidence Start -->
+
+<div class="container-fluid" id="confidence">
+    <div class="container p-5 ">
+        <h1 class="text-center mb-5">Drive Confidence Through Quality Parts</h1>
+
+        <div id="confidence" class="row d-flex justify-content-center align-items-center" >
+            <div class="col-md-6 col-sm-12">
+                    <img src="./assets/drivingConfidence.png" class="w-75" alt="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, nulla quas accusantium mollitia labore libero eos nisi repellat dignissimos alias laboriosam maiores ea iusto quisquam obcaecati, sequi tempora aliquam totam placeat! Reiciendis.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                               
+                            <div class="d-flex gap-3">
+                                <img src="./assets/dp.png" class="w-25 rounded rounded-pill" alt="">
+                                <div>
+                                    <h4>Ronald Richerds</h4>
+                                    <p>Founder CEO</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <h2>10+</h2>
+                                <div>
+                                    <h4>Years Working</h4>
+                                    <p>Experience</p>
+                                </div>
+                            </div>
+                            <div class="progress w-75">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                                <img class="w-75" src="./assets/navBG.jpg" alt="">
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Driving confidence End -->
+
+<!-- Customer Reviews Start -->
+
+<div class="container-fluid text-white text-center" id="customer">
+    <br>
+    <div class="container">
+        <h1>Customer <span>Reviews</span></h1>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vero repellat aliquid incidunt, eveniet maxime facere iste delectus tempore deserunt, placeat tenetur, nisi id accusamus laudantium praesentium unde numquam hic?</p>
+        
+    </div>
+    <br>
+    <br>
+</div>
+
+<!-- Reviews Card -->
+<!-- Reviews card End -->
+<div class="container">
+    <div class="reviews-container">
+        <div class="row d-flex justify-content-center align-items-center gap-3">
+            <div class="col-md-3 quotes col-sm-12 bg-body-secondary rounded rounded-5">
+                <div class="client_reviews p-4">
+                    <div class="bg-reviews" id="bg-reviews"></div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="profile">
+                                <img class="dp" src="./assets/dp.png" class="img-fluid" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 heading-reviews">
+                                <h3>Ronaldo</h3>
+                                <p>cricketer</p>
+                        </div>
+                        <div class="col-md-12"><div class="summary">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nisi. Neque ullam aliquid ipsum inventore facere necessitatibus quisquam ipsa, nemo optio quo, enim eligendi eveniet?</p>
+                        </div></div>
+                        <div class="col-md-12 stars text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 quotes col-sm-12 bg-body-secondary rounded rounded-5">
+                <div class="client_reviews p-4">
+                    <div class="bg-reviews" id="bg-reviews"></div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="profile">
+                                <img class="dp" src="./assets/dp.png" class="img-fluid" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 heading-reviews">
+                                <h3>Ronaldo</h3>
+                                <p>cricketer</p>
+                        </div>
+                        <div class="col-md-12"><div class="summary">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nisi. Neque ullam aliquid ipsum inventore facere necessitatibus quisquam ipsa, nemo optio quo, enim eligendi eveniet?</p>
+                        </div></div>
+                        <div class="col-md-12 stars text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 quotes col-sm-12 bg-body-secondary rounded rounded-5">
+                <div class="client_reviews p-4">
+                    <div class="bg-reviews" id="bg-reviews"></div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="profile">
+                                <img class="dp" src="./assets/dp.png" class="img-fluid" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 heading-reviews">
+                                <h3>Ronaldo</h3>
+                                <p>cricketer</p>
+                        </div>
+                        <div class="col-md-12"><div class="summary">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nisi. Neque ullam aliquid ipsum inventore facere necessitatibus quisquam ipsa, nemo optio quo, enim eligendi eveniet?</p>
+                        </div></div>
+                        <div class="col-md-12 stars text-center">
+                                <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Customer Reviews End -->
+
+<div  style=" height: 25vh;" class="container-fluid childCta mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-sm-12 col-md-6 pt-5">
+                <h4>Cannot Find What You Are Looking For? Call Us now on <b>0333 7772 9793</b></h4>
+                <button class="btn  rounded-pill "  style="font-size: 1rem; height:3rem; width: 40%;color:#FDAB04; background: #000000;"  type="submit">Contact Us</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer  -->
+       <!--  footer  Section -->
+       <div class="parent">
+       
+        <footer class="site-footer">
+            <div class="container mt-5 location">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <h6 class="mb-4"><img src="https://aiksoltech.com/images/23_03_17_Untitled-design 1@2x.png" height="40px"></h6>
+                        <p class="text-justify d-inline">We've cultivated a network of taxi operators leveraging our advanced technology to seamlessly accept online bookings
+                        </p>
+                        <div class="mt-5">
+                              <span class="icon">
+                         <i class="fa fa-phone" style="font-size:24px"></i>
+                         </span>
+                            <span class="ml-2"><a href="tel:+03333390785">0333 339 0785</a></span>
+                            <div class="mt-3">
+                            <span class="icon">
+                            <i class="fa fa-envelope" style="font-size:24px"></i>
+                            </span>
+                                <span class="ml-2"><a href="mailto:help@taxicodedirect.com">help@taxicodedirect.com</a></span>
+                            </div>
+    
+                        </div>
+                    </div>
+                    </style>
+                    <div class="col-xs-6 col-md-2">
+                        <h6 class="underline-text mb-5">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://aiksoltech.com">Home</a></li>
+                            <li><a href="https://aiksoltech.com/about-us">About Us</a></li>
+                            <li><a href="index.html">Help</a></li>
+                            <li><a href="https://aiksoltech.com/create-partner">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6 class="underline-text mb-5">Important Policies</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://aiksoltech.com/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://aiksoltech.com/terms-and-conditions">Terms And Conditions</a></li>
+                            <li><img src="https://aiksoltech.com/images/footer_icon.png" class="img-fluid" style="width: 120px; height: auto !important;"></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-3 Other-Links">
+                        <h6 class="underline-text mb-5">Other Links</h6>
+                        <ul class="footer-links">
+                            <li>Minicab, Minibus, Chauffeur, and Coach Hire Businesses:</li>
+                            <a href="https://aiksoltech.com/membership">Get membership with us, Apply Now!</a>
+                            <li class="travel-companies">Travel Agencies and TMCs:</li>
+                            <a href="https://aiksoltech.com/become-part">Become part of our network, for seamless booking experience</a>
+                            <li class="travel-companies">Business & Education Accounts with 30 Days Payment Flexibility</li>
+                            <a href="https://aiksoltech.com/apply-now">Apply Now!</a>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+
+
+
+<!-- Footer -->
+
+        <div class="footer_low">
+            <div class="left_low_footer">
+                <div class="soical_icons_cta">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/taxicodedirect"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/@taxicodedirect1983"><i class="fa fa-youtube"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/taxicodedirect18/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/company/taxicode-direct/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_low_footer">
+                <div>
+                    <p class="copyright-text ">&copy; Copyright 2018 - 2024 All Rights Reserved by TaxiCode Direct Limited
+                        <a href="#"></a>
+                    </p>
+                    <p  class="copyright-text">&#174; TAXICODE DIRECT is the registered trademark of TaxiCode Direct Limited</p>
+                </div>
+            </div>
+        </div>
+      
+</div>
+
+
+<script src="./js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+</body>
+
+
+</html>
