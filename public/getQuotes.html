@@ -39,9 +39,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="./aboutUs.html">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Help</a>
-                        </li>
+                      
                        
                         <li class="nav-item">
                         </li>
@@ -54,7 +52,7 @@
 
         <!-- Hero Section -->
 
-        <div class="container-fluid d-flex justify-content-center align-items-center mt-5 pb-5" id="hero">
+        <div class="container-fluid d-flex justify-content-center align-items-center mt-5 pb-5">
             <div class="container">
                 <div class="row">
 
@@ -64,10 +62,11 @@
 
                             <div class="right_div border rounded-bottom p-5">
                                 <!-- advance quotes row form -->
-
+                                <form action="">
                                 <div class="row">
                                     <!-- 1st row -->
                                     <div class="col-md-4 col-sm-12">
+                                       
                                         <div class="mb-3">
                                             <select class="form-select text-white p-3 rounded rounded-5"
                                                 style="background-color: #2e2e2e" aria-label="Default select example">
@@ -122,16 +121,25 @@
                                                 placeholder="Destination Postcode" />
                                         </div>
                                     </div>
+                                    <div style="text-align: center;" >
                                     
-                                    
-                                </div>
-                                    
-                                    
-                                    
+                                        <div class="d-flex justify-content-center align-items-center mt-3 ">
+                                            <input type="checkbox" name="isAirportBooking" id="isAirportBooking" value="Yes" >
+                                            <label for="">Click! If it is an airport booking</label>
+                                        </div>
+                                        <br>
+                                        <input class="text-white mx-auto p-3 w-50 rounded rounded-5"  style="background-color: #2e2e2e" type="text" id="flightNumber" name="flightNumber"
+                                            class="rounded-input mt-2 hidden" placeholder="In bound Flight Number" />
+    
+                                    </div>
+                               
+                                </div>   
+                            </form>
                             </div>
+                            
                         </div>
-                                <a class="btn rounded rounded-5 p-3 w-25 fw-bold mt-3" href="./public/getQuotes.html">Get Quotes</a>
-                                <p class="mt-3 fw-bold">Complex Journey <a href="../public/advanceQuotes.html"  class="text-decoration-underline bg-transparent border-0  text-warning"><span>click here</span></a></p>
+                                <a class="btn rounded rounded-5 p-3 w-25 fw-bold mt-3" href="#quotes">Get Quotes</a>
+                                <p class="mt-3 fw-bold">Complex Journey <a href="./advanceQuotes.html"  class="text-decoration-underline bg-transparent border-0  text-warning"><span>click here</span></a></p>
 
                             </div>
                 </div>
@@ -147,89 +155,83 @@
     <div class="container text-center mt-5">
         <div class="content ">
             <div class="header_content">
-                <h1 class="m-5">Here are the Results</h1>
-                <p class="mt-5">You can book this journey with just a 20% Deposit. Balance due </p>
-                <p>7 days before you travel.</p>
+                <h1 class="">Booking Your Best Deal
+                </h1>
+                
             </div>
+            <div id="getQotes_select">
             <div class="row mt-5">
-
-                <div class="col-sm-12 col-md-12 gap-4 d-flex justify-content-center align-items-center">
-                    <select class=" text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
+                <div  class="col-sm-12 col-md-3 mt-2">
+                    <select class="form-select text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
                         aria-label="Default select example">
                         <option selected>Type</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <select class=" text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
+                    </div>
+                    <div  class="col-sm-12 col-md-3 mt-2  ">
+                    <select class="form-select text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
                         aria-label="Default select example">
                         <option selected>Class</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <select class=" text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
+                    </div>
+                    <div  class="col-sm-12 col-md-3 mt-2 ">
+                    <select class="form-select text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
                         aria-label="Default select example">
                         <option selected>Sort By</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <select class=" text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
+                    </div>
+                    <div  class="col-sm-12 col-md-3 mt-2 ">
+                    <select class="form-select text-dark p-3 border-0 rounded rounded-5 w-100" style="background-color: #F1F1F1"
                         aria-label="Default select example">
                         <option selected>Display Price</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                </div>
-            </div>
-
-
-            <div class="row mt-5  d-flex justify-content-space-center ">
-                <div class="col-sm-12 col-md-6  d-flex justify-content-center ">
-                    <div class="checkbox  d-flex gap-3">
-                        <label for="">Taxi</label>
-                        <input type="checkbox">
-                    </div>
-                    <div class="checkbox  d-flex gap-3">
-                        <label for="">MVP</label>
-                        <input type="checkbox">
-                    </div>
-                    <div class="checkbox  d-flex gap-3">
-                        <label for="">Standard</label>
-                        <input type="checkbox">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6  d-flex justify-content-center ">
-
-                    <div class="checkbox  d-flex gap-3">
-                        <label for="">Executive</label>
-                        <input type="checkbox">
-                    </div>
-                    <div class="checkbox  d-flex gap-3">
-                        <label for="">Luxury</label>
-                        <input type="checkbox">
-                    </div>
-                    <div class="checkbox d-flex gap-3">
-                        <label for="">Chauffeur</label>
-                        <input type="checkbox">
                     </div>
                 </div>
             </div>
+            </div>
+
+
+         
             
+            <div class="row" id="quotes">
+                <div class="col-md-12 col-sm-12">
+                    <div class="embed-responsive rounded rounded-5 embed-responsive-21by9 rounded rounded-5">
+                        <iframe class="embed-responsive-item mt-5"
+                            style="border-radius: 2rem;width:100%; height: 40vh;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23976.69855826133!2d74.29511036538838!3d31.463536230981948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1718042815212!5m2!1sen!2s"
+                           allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
                 <div class="row mt-5">
-                    <div class="col-md-8 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                
-
+                            <div class="col-sm-12 col-md-3">
                                 <div class="card mb-3 rounded rounded-4">
-                                    <div class="card-content p-3">
-                                        <div class="top bg-body-secondary p-5 rounded rounded-5">
-                                            <img src="../assets/taxi2.png" alt="">
-                                        </div>
-                                        <div class="price d-flex justify-content-between mt-5">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                            <div class="col-md-8 col-sm-8">
+                                             <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                 <img width="150" src="../assets/taxi2.png" alt="">
+                                             </div>
+                                             </div>
+                                              <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                             <p class="mt-3"><b>Discount</b></p>
+                                             <p style="margin-top: -20px;">15%</p>
+                                             </div>   
+                                          </div>
+                                        <div class="price d-flex justify-content-between mt-2">
                                             <p class="fw-bolder">Cheapest Price</p>
                                             <p class="fw-bolder">$82.00</p>
                                         </div>
@@ -240,36 +242,58 @@
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/location.png" alt="">
-                                                <p class="mt-3">Airport Transfers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/passengers.png" alt="">
-                                                <p class="mt-3">Passengers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
                                             </div>
                                             <p>2</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/ac.png" alt="">
-                                                <p class="mt-3">Air Condition</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
                                         <div class="price_button p-3 ">
-                                            <button class="btn fw-bolder rounded rounded-5 w-50">Book Now →</button>
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card mb-3 rounded rounded-4">
-                                    <div class="card-content p-3">
-                                        <div class="top bg-body-secondary p-5 rounded rounded-5">
-                                            <img src="../assets/taxi2.png" alt="">
-                                        </div>
-                                        <div class="price d-flex justify-content-between mt-5">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
                                             <p class="fw-bolder">Cheapest Price</p>
                                             <p class="fw-bolder">$82.00</p>
                                         </div>
@@ -280,38 +304,60 @@
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/location.png" alt="">
-                                                <p class="mt-3">Airport Transfers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/passengers.png" alt="">
-                                                <p class="mt-3">Passengers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
                                             </div>
                                             <p>2</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/ac.png" alt="">
-                                                <p class="mt-3">Air Condition</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
                                         <div class="price_button p-3 ">
-                                            <button class="btn fw-bolder rounded rounded-5 w-50">Book Now →</button>
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-12 col-md-3">
                                 <div class="card mb-3 rounded rounded-4">
-                                    <div class="card-content p-3">
-                                        <div class="top bg-body-secondary p-5 rounded rounded-5">
-                                            <img src="../assets/taxi2.png" alt="">
-                                        </div>
-                                        <div class="price d-flex justify-content-between mt-5">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
                                             <p class="fw-bolder">Cheapest Price</p>
                                             <p class="fw-bolder">$82.00</p>
                                         </div>
@@ -322,36 +368,58 @@
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/location.png" alt="">
-                                                <p class="mt-3">Airport Transfers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/passengers.png" alt="">
-                                                <p class="mt-3">Passengers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
                                             </div>
                                             <p>2</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/ac.png" alt="">
-                                                <p class="mt-3">Air Condition</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
                                         <div class="price_button p-3 ">
-                                            <button class="btn fw-bolder rounded rounded-5 w-50">Book Now →</button>
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card mb-3 rounded rounded-4">
-                                    <div class="card-content p-3">
-                                        <div class="top bg-body-secondary p-5 rounded rounded-5">
-                                            <img src="../assets/taxi2.png" alt="">
-                                        </div>
-                                        <div class="price d-flex justify-content-between mt-5">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
                                             <p class="fw-bolder">Cheapest Price</p>
                                             <p class="fw-bolder">$82.00</p>
                                         </div>
@@ -362,27 +430,295 @@
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/location.png" alt="">
-                                                <p class="mt-3">Airport Transfers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/passengers.png" alt="">
-                                                <p class="mt-3">Passengers</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
                                             </div>
                                             <p>2</p>
                                         </div>
                                         <div class="details d-flex justify-content-between align-items-center">
                                             <div class="d-flex gap-3 justify-content-center align-items-center">
-                                                <img width="40" src="../assets/ac.png" alt="">
-                                                <p class="mt-3">Air Condition</p>
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
                                             </div>
                                             <p>Yes</p>
                                         </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
                                         <div class="price_button p-3 ">
-                                            <button class="btn fw-bolder rounded rounded-5 w-50">Book Now →</button>
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="card mb-3 rounded rounded-4">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
+                                            <p class="fw-bolder">Cheapest Price</p>
+                                            <p class="fw-bolder">$82.00</p>
+                                        </div>
+                                        <div class="fleet_reviews d-flex">
+
+                                            <p>⭐⭐⭐⭐⭐</p>
+                                            <p>(45)</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
+                                            </div>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
+                                        <div class="price_button p-3 ">
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 rounded rounded-4">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
+                                            <p class="fw-bolder">Cheapest Price</p>
+                                            <p class="fw-bolder">$82.00</p>
+                                        </div>
+                                        <div class="fleet_reviews d-flex">
+
+                                            <p>⭐⭐⭐⭐⭐</p>
+                                            <p>(45)</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
+                                            </div>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
+                                        <div class="price_button p-3 ">
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="card mb-3 rounded rounded-4">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
+                                            <p class="fw-bolder">Cheapest Price</p>
+                                            <p class="fw-bolder">$82.00</p>
+                                        </div>
+                                        <div class="fleet_reviews d-flex">
+
+                                            <p>⭐⭐⭐⭐⭐</p>
+                                            <p>(45)</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
+                                            </div>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
+                                        <div class="price_button p-3 ">
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 rounded rounded-4">
+                                    <div class="card-content p-2">
+                                        <div class="row">                                          
+                                           <div class="col-md-8 col-sm-8">
+                                            <div class="top bg-body-secondary p-2 rounded rounded-5">
+                                                <img width="150" src="../assets/taxi2.png" alt="">
+                                            </div>
+                                            </div>
+                                             <div class="col-md-4 col-sm-4  rounded rounded-5">
+                                            <p class="mt-3"><b>Discount</b></p>
+                                            <p style="margin-top: -20px;">15%</p>
+                                            </div>   
+                                         </div>
+                                        <div class="price d-flex justify-content-between mt-2">
+                                            <p class="fw-bolder">Cheapest Price</p>
+                                            <p class="fw-bolder">$82.00</p>
+                                        </div>
+                                        <div class="fleet_reviews d-flex">
+
+                                            <p>⭐⭐⭐⭐⭐</p>
+                                            <p>(45)</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/location.png" alt="">
+                                                <p class="mt-1">Airport Transfers</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/passengers.png" alt="">
+                                                <p class="mt-1">Passengers</p>
+                                            </div>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Air Condition</p>
+                                            </div>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Class</p>
+                                            </div>
+                                            <p>Standard</p>
+                                        </div>
+                                        <div class="details d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-3 justify-content-center align-items-center">
+                                                <img width="25" style="margin-top: -10px;" src="../assets/ac.png" alt="">
+                                                <p class="mt-1">Type</p>
+                                            </div>
+                                            <p>ُؐMPV</p>
+                                        </div>
+                                        <div class="price_button p-3 ">
+                                            <a id="bookNow" href="./paymentDetails.html" class="btn fw-bolder rounded rounded-5 w-50">Book Now →</a>
                                         </div>
                                     </div>
                                 </div>
@@ -390,15 +726,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-
-                        <div class="embed-responsive rounded rounded-5 embed-responsive-21by9 rounded rounded-5">
-                            <iframe class="embed-responsive-item"
-                                style="border-radius: 2rem; height: 100vh ;width:100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23976.69855826133!2d74.29511036538838!3d31.463536230981948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1718042815212!5m2!1sen!2s"
-                               allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
+                   
                 </div>
 
 
@@ -412,11 +740,11 @@
     <div style=" height: 25vh;" class="container-fluid childCta ">
         <div class="container">
             <div class="row d-flex justify-content-center text-center">
-                <div class="col-sm-12 col-md-6 pt-5">
-                    <h4>Cannot Find What You Are Looking For? Call Us now on <b>0333 7772 9793</b></h4>
-                    <button class="btn  rounded-pill "
-                        style="font-size: 1rem; height:3rem; width: 40%;color:#FDAB04; background: #000000;"
-                        type="submit">Contact Us</button>
+                <div class="col-sm-12 col-md-12 pt-5">
+                    <h4>FOR A SEAMLESS ONLINE TRANSPORT COMPARISON BOOKING EXPERIENCE, Call us now </h4>
+                    <button class="btn rounded-pill "
+                        style="font-size: 1rem; height:3rem; width: 25%;color:#FDAB04; background: #000000;"
+                        type="submit"><b>0333 7772 9793</b></button>
                 </div>
             </div>
         </div>
@@ -437,7 +765,8 @@
             <div class="container mt-5 location">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
-                        <h6 class="mb-4"><img src="https://aiksoltech.com/images/23_03_17_Untitled-design 1@2x.png"
+                        <h6 class="mb-4"><img
+                                src="../assets/cheapRate_logo.png"
                                 height="40px"></h6>
                         <p class="text-justify d-inline">We've cultivated a network of taxi operators leveraging
                             our advanced technology to seamlessly accept online bookings
@@ -461,17 +790,17 @@
                     <div class="col-xs-6 col-md-2">
                         <h6 class="underline-text mb-5">Quick Links</h6>
                         <ul class="footer-links">
-                            <li><a href="https://aiksoltech.com">Home</a></li>
-                            <li><a href="https://aiksoltech.com/about-us">About Us</a></li>
-                            <li><a href="index.html">Help</a></li>
-                            <li><a href="https://aiksoltech.com/create-partner">Partners</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./aboutUs.html">About Us</a></li>
+                            <li><a href="mailto:help@taxicodedirect.com">Help</a></li>
+                            <li><a href="https://dashboard.taxicodedirect.com/login">Partner Login</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <h6 class="underline-text mb-5">Important Policies</h6>
                         <ul class="footer-links">
-                            <li><a href="https://aiksoltech.com/privacy-policy">Privacy Policy</a></li>
-                            <li><a href="https://aiksoltech.com/terms-and-conditions">Terms And Conditions</a>
+                            <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms And Conditions</a>
                             </li>
                             <li><img src="https://aiksoltech.com/images/footer_icon.png" class="img-fluid"
                                     style="width: 120px; height: auto !important;"></li>
@@ -481,13 +810,13 @@
                         <h6 class="underline-text mb-5">Other Links</h6>
                         <ul class="footer-links">
                             <li>Minicab, Minibus, Chauffeur, and Coach Hire Businesses:</li>
-                            <a href="https://aiksoltech.com/membership">Get membership with us, Apply Now!</a>
+                            <a href="./membership.html">Get membership with us, Apply Now!</a>
                             <li class="travel-companies">Travel Agencies and TMCs:</li>
-                            <a href="https://aiksoltech.com/become-part">Become part of our network, for
+                            <a href="./createPartner.html">Become part of our network, for
                                 seamless booking experience</a>
                             <li class="travel-companies">Business & Education Accounts with 30 Days Payment
                                 Flexibility</li>
-                            <a href="https://aiksoltech.com/apply-now">Apply Now!</a>
+                            <a href="./buisnessAndEducation.html">Apply Now!</a>
                         </ul>
                     </div>
                 </div>
@@ -532,7 +861,8 @@
 
 
 
-    <script src="./js/index.js"></script>
+
+    <script src="../js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

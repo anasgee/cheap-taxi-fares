@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Terms And Conditions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b4408dd41e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <div class="nav_container" id="hero_cta">
+        <nav class="navbar navbar-expand-lg p-3" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="w-75" src="../assets/cheapRate_logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+                        <li class="nav-item" data-toggle="modal" data-target="#myModal2" id="login_modal">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Login</a>
+                        </li>
+                        <li class="nav-item" data-toggle="modal" data-target="#myModal">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mailto:help@taxicodedirect.com">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./trackbooking.html">Track Booking</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog p-5 modal-dialog-centered custom-modal-width modal-lg ">
+        
+                <div class="modal-content myModal">
+                    <button type="button" class="close bg-transparent text-dark border-0" data-dismiss="modal">&times;</button>
+                   
+                        <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                            <h3 class="fw-bold">Create your Account </h3>
+                            <div class="right_div border rounded-bottom p-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+        
+                                   
+                                        <form>
+                                            <div class="form-group right_div_top">
+                                                <input type="text" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="name" aria-describedby="emailHelp" placeholder="First Name">
+                                              </div>
+                                              <div class="form-group right_div_top">
+                                                <input type="email" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                              </div>
+                                              <div class="form-group">
+                                                <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="Password">
+                                              </div>
+                                              
+        
+                                            
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input style="background: #2e2e2e" type="text" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="lname" placeholder="Last Name">
+                                              </div>
+                                              <div class="form-group mt-2">
+                                                <select class="form-select text-white p-3 rounded rounded-5"
+                                                    style="background-color: #2e2e2e"
+                                                    aria-label="Default select example">
+                                                    <option selected>Personal</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                          
+                                              <div class="form-group">
+                                                <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="Confirm Password">
+                                              </div>
+                                              
+                                        </form>
+                                    </div>
+                                </div>
+                                    
+                                <div>
+                                    <form action="">
+                                        <div style="text-align: center;" >
+                                    
+                                            <div class="d-flex justify-content-start align-items-center mt-3 ">
+                                                <input type="checkbox" name="" id="" value="Yes" >
+                                                <label for="">Accept Terms and Conditions</label>
+                                            </div>
+                                            <br>
+            
+                                            </div>
+                                    </form>
+                                </div>
+                                    <a class="btn rounded rounded-5 p-3 w-75 fw-bold mt-3" href="#">Sign Up</a>
+                                    <p class="mt-3">Already have an account ?<button style="background: transparent;" class="border-0" data-toggle="modal" data-target="#myModal2" id="login_modal"> <span>Login</span></button></p>
+                            </div>
+                        </div>
+                </div>
+        
+            </div>
+        </div>
+        
+        <!--  -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog p-5 modal-dialog-centered custom-modal-width  ">
+        
+                <div class="modal-content myModal">
+                    <button type="button" class="close bg-transparent text-dark border-0" data-dismiss="modal">&times;</button>
+                   
+                        <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                            <h3 class="fw-bold">Login to your account </h3>
+                            <div class="right_div border rounded-bottom p-5">
+                                <p>Log in to continue</p>
+                                <div class="row">
+                                    
+                                   <form action="">
+                                    <div class="form-group right_div_top">
+                                        <input type="email" style="background: #2e2e2e" class="form-control text-white p-3 rounded rounded-5 mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="razatechtube@gmail.com">
+                                      </div>
+                                      <div class="form-group">
+                                        <input style="background: #2e2e2e" type="password" class="form-control text-white p-3 rounded rounded-5 mt-2"  id="exampleInputPassword1" placeholder="*******">
+                                      </div>
+                                   </form>
+                                </div>
+                                    
+                                <div>
+                                    <form action="">
+                                        <div style="text-align: center;" >
+                                    
+                                            <div class="d-flex justify-content-start align-items-center mt-3 ">
+                                                <input type="checkbox" name="" id="" value="Yes" >
+                                                <label for="">Accept Terms and Conditions</label>
+                                            </div>
+                                            <br>
+                                            </div>
+                                    </form>
+                                </div>
+                                    <a class="btn rounded rounded-5 p-3 w-75 fw-bold mt-3" href="./public/home.html">login</a>
+                                    <p class="mt-3">Don't have taxicode account?<button style="background: transparent;" class="border-0" data-toggle="modal" data-target="#myModal"> <span>sign up</span></button></p>
+                            </div>
+                        </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+       
+        <div class="container-fluid d-flex justify-content-center align-items-center mt-5 pb-5" id="hero">
+            <div class="container-fluid d-flex justify-content-center align-items-center ">
+                <div class="row w-75 d-flex justify-content-center align-items-center terms" id="privacyTermsRow">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="right_div_top border bg-white text-dark border-5 border-white  rounded-bottom-3">
+                            <h3>Terms and Conditions</h3>
+
+                            <div class="right_div border rounded-bottom p-5" id="privacyTerms">
+
+                                <!-- advance quotes row form -->
+                                <div class="row">
+                                    <!-- left columns -->
+                                    <div class="col-md-12 col-sm-12 text-start">
+                                          
+                                            <div class=" border-left" >
+                                                <ol type="1">
+                                               <li class="terms-heading">
+                                                Definitions
+                                            </li>
+
+                                               <ol>
+                                                <li>In these Terms and Conditions, the following terms shall have the assigned meanings unless the context requires otherwise: </li>
+                                                <ol>
+                                                    <li>Designated Pick-Up Location" refers to the specified place for You to be picked up by the Transportation Provider as stated in the Booking Details.</li>
+                                                    <li>"Scheduled Time" refers to the set date and time for the Transportation Provider to pick You up per the Booking Details.</li>
+                                                    <li>"Booking" refers to the reservation of a Transportation Service made through this Website for completing Trips. Bookings can be for one-way, round-trip, or multi-stop Trips.</li>
+                                                    <li>"Transportation Provider" refers to the Private Hire Operator, Minibus, or Coach company with whom You make the Booking.</li>
+                                                    <li>"Provider Terms" refers to the terms and conditions of the Transportation Provider, which along with these Terms, govern the Booking and Trip(s).</li>
+                                                    <li>"Payment Card" refers to the credit, debit, or charge card You use for payment when making the Booking.</li>
+                                                    <li>"Cash Payment" refers to the payment made directly to the Transportation Provider and/or driver for the Fare.</li>
+                                                    <li>"Bank Transfer" refers to the payment made via bank transfer for the Fare to the Transportation Provider.</li>
+                                                    <li>"Card Fees" refers to charges from the credit card companies for Your card payment.</li>
+                                                    <li>"Booking Details" refers to the information You must provide when making a Booking, including pick-up date/time, pick-up/drop-off addresses, and Your Personal Information.</li>
+                                                    <li>"Fare" refers to the fee You pay for the accepted Quote.</li>
+                                                    <li>"Goods" refers to any items carried in the vehicle booked through this Website.</li>
+                                                    <li>"Trip" refers to the journey from the pick-up to the drop-off location provided in Your Booking.</li>
+                                                    <li>"Licensing Authority" refers to any regional/national authority responsible for licensing taxi, minicab, minibus, or coach operators.</li>
+                                                    <li>"Special Requirements" refers to any specific needs like disabled facilities, driver gender preference, etc.</li>
+                                                    <li>"Passenger" refers to any individual transported in a vehicle booked via this Website.</li>
+                                                    <li>"Personal Information" refers to the details provided by You such as physical address, email, phone number, and Payment Card details.</li>
+                                                    <li>"Quote" refers to the fixed-price estimate provided for the Trip through the Website.</li>
+                                                    <li>"Terms" refers to these terms and conditions between the Company and You.</li>
+                                                    <li>"You" refers to the person entering the Booking Details.</li>
+                                                    <li>"Minicab" refers to a Private Hire Vehicle available for pre-booked Trips in compliance with relevant Licensing Authority requirements.</li>
+                                                    <li>Clause headings are for convenience only and shall not affect interpretation of these Terms.</li>
+                                                </ol>
+                                              
+                                            </ol>
+                                               
+                                           <li class="terms-heading">
+                                            GENERAL PROVISIONS
+                                           </li>
+                                           <ol>
+                                            <li>By booking transportation through this website " you agree to the Terms and Conditions," You accept these terms as the exclusive basis governing such booking. If booking for others, you represent having authority to accept these terms on their behalf.</li>
+                                            <li>Deviations from these Terms are only valid if explicitly confirmed in writing by the Company.</li>
+                                            <li>If any provision is deemed invalid or unlawful, only that provision is void while the remaining Terms remain in full effect. An enforceable provision closest to the parties' intent shall replace the invalid one</li>
+                                            <li>The Company acts as an agent facilitating a contract directly between You and the Transportation Provider. The Company never becomes a party to the transport service contract between You and the Provider. Services are offered solely on behalf of the Provider at rates and terms determined by the Provider.</li>
+                                            <li>Where multiple Providers are selected for different Trip segments in one Booking, you have a separate contract with each respective Provider for their segment(s).</li>
+                                           </ol>
+                                           
+                                           <li class="terms-heading">WEBSITE USES</li>
+                                            <ol>
+                                                <li>You must provide accurate Booking Details and are responsible for any failure to do so when making a Booking through this Website.</li>
+                                                <li>You hereby warrant to the Company and Transportation Provider that You are at least 18 years old and legally able to make the Booking.</li>
+                                                <li>The Company does not guarantee fulfilling Booking requests and reserves the right to refuse or cancel any Bookings, issuing a full refund as final settlement of any claims.</li>
+                                                <li>Your Booking Details and Website usage data will be recorded by the Company, but Your Personal Information shall not be disclosed to third parties except the Transportation Provider, nor used for unrelated purposes, subject to the Privacy Policy and Clause 3.5.</li>
+                                                <li>The Company may send a "cookie" file to Your computer during Website visits to track behaviour and identify interests to enhance future visits. The cookie cannot identify You personally, and the Company shall only use it in relation to this Website. While You can configure browsers to reject cookies, this may limit certain Website functionality. The Company may disclose Personal Information if compelled by law or authorities.</li>
+                                            </ol>
+                                            <li class="terms-heading">BOOKINGS</li>
+                                            <ol>
+                                                <li>When entering your trip details, the website will attempt to provide quotes from providers able to fulfil your requirements. Quotes reflect current special offers available only at the time of booking.</li>
+                                                <li>You are responsible for ensuring accurate booking details are provided, including but not limited to selecting a suitable vehicle for luggage, valid pickup/drop-off addresses not causing traffic violations, correct date/time, customer name, email, and phone number. Inaccurate details may incur additional charges without refund eligibility. See 7.10. Making a booking constitutes an offer which may be accepted or rejected.</li>
+                                                <li>To amend a booking, contact the company directly. A £10 fee applies to all booking changes. Price increases due to changes require paying the difference. Price decreases allow a refund of the difference minus the £10 fee charged to the original payment method.</li>
+                                                <li>Bookings are also subject to the Transportation Provider's terms and conditions. In cases of conflict, these Terms take precedence.</li>
+                                                <li>The Transportation Provider is responsible for enforcing their own terms on you.</li>
+                                                <li>The company cannot confirm ability to accommodate special requirements. Those with such needs should make alternative arrangements.</li>
+                                                <li>The company reserves the right to correct pricing or typographical errors on the website. You may withdraw and receive a full refund upon being notified of such errors.</li>
+                                                <li>You agree that for booking fulfilment, the Transportation Provider may transfer the services contract to another suitable party when appropriate.</li>
+                                                <li>The company reserves the right to change the booked vehicle type to ensure fulfilment. For larger vehicles subject to availability issues, alternatives of similar type/class will be provided.</li>
+                                                <li>The company reserves the right to utilize third-party providers like Uber, Gett, and Karhoo to fulfill and any other third-party company for bookings if the original provider is unable to. You consent to receiving SMS notifications and sharing trip/rider information with these third parties.</li>
+                                            </ol>
+                                            <li class="terms-heading">PAYMENT</li>
+                                            <ol>
+                                                <li>For "Pay by Card" bookings, you authorize payment of the fare at booking time. The company collects monies due for the booked trip on the provider's behalf, settling card fees before remitting payment to the provider.</li>
+                                                <li>For card payments, you agree to the company storing an authorization token to charge for any amendments. Card details are not stored. The booking cannot be fulfilled if card payment is refused.</li>
+                                                <li>For "Pay Cash," you pay the driver directly. For "BACS," payment is made to the provider's bank account. For "Credit Balance," payment is made to the company's account.</li>
+                                                <li>Once confirmed on the payment screen, bookings cannot be cancelled or changed except per Clause 7.
+                                                </li>
+                                                <li>If card payment is refused, the booking cannot be fulfilled.</li>
+                                                <li>A receipt will be emailed. Payment excludes extras like child seats, which are payable directly to the provider along with any required vehicle upgrades for excess luggage. Tipping the driver is at your discretion.</li>
+                                                <li>Deviating from the booked route may incur additional charges from the provider payable directly.</li>
+                                                <li>The company offers no warranties on direct cash or bank transfer payments to providers.</li>
+                                            </ol>
+                                            <li class="terms-heading">INSURANCE</li>
+                                                <ol>
+                                                    <li>Neither the company nor provider is responsible for or insured against damage/loss to goods during transport. Insuring goods is solely your responsibility.</li>
+                                                </ol>
+
+                                                <li class="terms-heading">
+                                                    CANCELLATIONS & REFUNDS
+                                                </li>
+                                                <ol>
+                                                    <li>Cancellations must be made through the website. Refund amounts depend on cancellation timing: >25 days before travel (55% refund), 11-25 days (25%), 2-10 days (10%), ≤1 day (no refund). For provider cancellations, confirmation via email link is required for refund.</li>
+                                                    <li>Deposited amounts will be refunded/charged per 7.1.</li>
+                                                    <li>Cancellation charges may be refunded if rebooking within 24 hours, minus a £15 fee, at the company's discretion. Right to refuse any refund is reserved.</li>
+                                                    <li>If the provider doesn't arrive within 30 mins of scheduled time (45 mins for airports) and the trip isn't taken, a full fare refund including prepaid card fees is provided as final settlement. Continuing after the 30-minute period waives any refund.</li>
+                                                    <li>If you aren't available within 15 minutes of the scheduled time, the provider may treat it as a cancellation with no refund eligibility. Additional waiting charges may apply if delayed over 15 minutes, except at the airport where the maximum wait time would be 30 minutes.</li>
+                                                    <li>No refunds are provided for not using services without proper cancellation.
+                                                    </li>
+                                                    <li>No refunds for cancelling a return trip leg.</li>
+                                                    <li>Refunds are issued to the original payment card within 5-7 working days or depending on your bank's processing for such a refund.
+                                                    </li>
+                                                    <li>Account customers are exempt from cancellation fees, case by case basis.
+                                                    </li>
+                                                    <li>For refund eligibility due to cancellation/no-show, you must contact the company within 7 days.
+                                                    </li>
+                                                    <li>Providing inaccurate booking details may result in no refund eligibility and incur additional charges to complete the trip. A booking cannot go ahead until those extra charges have been paid.</li>
+                                                </ol>
+                                                <li class="terms-heading">WARRANTY & LIABILITY LIMITATIONS
+                                                </li>
+                                                <ol>
+                                                    <li>You acknowledge the company acts as the provider's agent, and any legal remedy must be pursued against the provider, though assistance may be provided.</li>
+                                                    <li>Providers warrant having appropriate licensing, but verification is your responsibility.</li>
+                                                    <li>The company is not liable for pick-up/drop-off delays, no-shows, or failure to meet requirements/expectations.</li>
+                                                    <li>The company is not liable for any indirect, consequential, or revenue losses related to a provider's failure. Pursue claims directly against the provider.</li>
+                                                    <li>The company's total liability is capped at £50.</li>
+                                                    <li>All implied warranties are excluded to the fullest extent permitted by law.
+                                                    </li>
+                                                    <li>Nothing excludes your statutory consumer rights or limits liability for death/injury due to negligence.
+                                                    </li>
+                                                    <li>Estimated trip times/arrivals are indicative only, not accounting for traffic/weather/routing. You're responsible for allowing sufficient time based on the scheduled pickup.</li>
+                                                    <li>The company may send booking status updates via email/SMS but doesn't guarantee their delivery or timing and is not liable for any related losses.</li>
+                                                    <li>Each subclause is separate and severable, remaining enforceable regardless of termination or other circumstances.</li>
+                                                </ol>
+                                                <li class="terms-heading">
+                                                    BEHAVIOUR
+                                                </li>
+                                                <ol>
+                                                    <li>The provider reserves the right to terminate a trip if behavior is disruptive or compromises safety, with no liability for additional costs incurred.</li>
+                                                    <li>Alcoholic beverages or any kind of cigarettes including e-cigs cannot be consumed in the vehicles.</li>
+                                                    <li>The provider may refuse service to those under the influence of alcohol or drugs.</li>
+                                                </ol>
+                                                <li class="terms-heading">
+                                                    LIMITATIONS & EXCLUSIONS
+
+                                                </li>
+                                                <ol>
+                                                    <li>The provider will not transport valuables over £50, hazardous/illegal goods, or perishables.
+                                                    </li>
+                                                    <li>The provider has no liability for losses related to 10.1.
+                                                    </li>
+                                                    <li>The provider is not liable for consequential losses, profits, or damage to fragile items.
+                                                    </li>
+                                                    <li>The provider is not liable for losses from: breakdowns, weather, customer acts/omissions, or force majeure events.
+                                                    </li>
+                                                    <li>Clauses 10.1-10.4 and 11.1 apply to damage/loss of goods, not personal injury/death.
+                                                    </li>
+                                                    <li>Website use is non-exclusive.
+                                                    </li>
+                                                    <li>At booking, these Terms supersede prior agreements or customer terms.
+                                                    </li>
+                                                </ol>
+                                                <li class="terms-heading">
+                                                    DISPUTES
+                                                </li>
+                                                <ol>
+                                                    <li>Complaints about the provider's service must first be made directly to them within 24 hours to attempt resolution.
+                                                    </li>
+                                                    <li>Unresolved complaints must be reported to the company within 48 hours, or claims may be invalidated.
+                                                    </li>
+                                                    <li>For unresolved claims, the company may submit them to an independent third party whose decision is binding.
+                                                    </li>
+                                                </ol>
+                                                <li class="terms-heading">PRIVACY
+                                                </li>
+                                                <ol>
+                                                    <li>Booking personal data is kept confidential and not shared without consent. Privacy policy amendments will be posted publicly.
+                                                    </li>
+                                                </ol>
+                                                <li class="terms-heading">
+                                                    MISCELLANEOUS
+                                                </li>
+                                                <ol>
+                                                    <li>You didn't rely on company representations when contracting with the provider.
+                                                    </li>
+                                                    <li>Failure to enforce any right doesn't constitute a permanent waiver.
+                                                    </li>
+                                                    <li>Notices to the company: help@taxicodedirect.com
+                                                    </li>
+                                                    <li>Notices to you: provided email, deemed received 2 hours after sending.
+                                                    </li>
+                                                    <li>European law applies, excluding international treaty provisions unless mandatory.
+                                                    </li>
+                                                </ol>
+                                        </ol>
+                                        </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                
+                              
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    </div>
+    <!-- Hero Section End -->
+    </div>
+
+    <!-- Footer Part -->
+    <div style=" height: 25vh;" class="container-fluid childCta ">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-sm-12 col-md-12 pt-5">
+                    <h4>FOR A SEAMLESS ONLINE TRANSPORT COMPARISON BOOKING EXPERIENCE, Call us now </h4>
+                    <button class="btn rounded-pill "
+                        style="font-size: 1rem; height:3rem; width: 25%;color:#FDAB04; background: #000000;"
+                        type="submit"><b>0333 7772 9793</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Child CTA End -->
+
+
+
+
+
+
+    <!-- Footer  -->
+    <!--  footer  Section -->
+    <div class="parent">
+
+        <footer class="site-footer">
+            <div class="container mt-5 location">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <h6 class="mb-4"><img
+                                src="../assets/cheapRate_logo.png"
+                                height="40px"></h6>
+                        <p class="text-justify d-inline">We've cultivated a network of taxi operators leveraging
+                            our advanced technology to seamlessly accept online bookings
+                        </p>
+                        <div class="mt-5">
+                            <span class="icon">
+                                <i class="fa fa-phone" style="font-size:24px"></i>
+                            </span>
+                            <span class="ml-2"><a href="tel:+03333390785">0333 339 0785</a></span>
+                            <div class="mt-3">
+                                <span class="icon">
+                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                </span>
+                                <span class="ml-2"><a
+                                        href="mailto:help@taxicodedirect.com">help@taxicodedirect.com</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    </style>
+                    <div class="col-xs-6 col-md-2">
+                        <h6 class="underline-text mb-5">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./aboutUs.html">About Us</a></li>
+                            <li><a href="index.html">Help</a></li>
+                            <li><a href="https://dashboard.taxicodedirect.com/login">Partner Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6 class="underline-text mb-5">Important Policies</h6>
+                        <ul class="footer-links">
+                            <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms And Conditions</a>
+                            </li>
+                            <li><img src="https://aiksoltech.com/images/footer_icon.png" class="img-fluid"
+                                    style="width: 120px; height: auto !important;"></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-3 Other-Links">
+                        <h6 class="underline-text mb-5">Other Links</h6>
+                        <ul class="footer-links">
+                            <li>Minicab, Minibus, Chauffeur, and Coach Hire Businesses:</li>
+                            <a href="./membership.html">Get membership with us, Apply Now!</a>
+                            <li class="travel-companies">Travel Agencies and TMCs:</li>
+                            <a href="./createPartner.html">Become part of our network, for
+                                seamless booking experience</a>
+                            <li class="travel-companies">Business & Education Accounts with 30 Days Payment
+                                Flexibility</li>
+                            <a href="./buisnessAndEducation.html">Apply Now!</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+
+        <!-- Footer -->
+
+        <div class="footer_low">
+            <div class="left_low_footer">
+                <div class="soical_icons_cta">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/taxicodedirect"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/@taxicodedirect1983"><i
+                                    class="fa fa-youtube"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/taxicodedirect18/"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/company/taxicode-direct/"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_low_footer">
+                <div>
+                    <p class="copyright-text ">&copy; Copyright 2018 - 2024 All Rights Reserved by TaxiCode
+                        Direct Limited
+                        <a href="#"></a>
+                    </p>
+                    <p class="copyright-text">&#174; TAXICODE DIRECT is the registered trademark of TaxiCode
+                        Direct Limited</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".clickable-row").click(function () {
+                window.location = $(this).data("href");
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

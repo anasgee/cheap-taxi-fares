@@ -12,6 +12,10 @@
     --button_color:#fdab04;
     --deals_button_bg:#F1F1F1;
 }
+body{
+    margin: 0px!important;
+    padding: 0px!important;
+}
 
 
 .form-control::placeholder {
@@ -35,6 +39,10 @@
 .form-select {
     color: white !important;
 }
+#getQotes_select .form-select{
+    color: black!important;
+}
+
 form input::placeholder{
 color: white;
 }
@@ -43,7 +51,13 @@ color: white;
 
      
 
-       
+       input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+            color: white;
+            filter: invert(1);
+            cursor: pointer;
+           
+        }
+     
 
          input[type=checkbox]{
             width: 20px!important;
@@ -53,7 +67,7 @@ color: white;
             color:black!important;
             -webkit-appearance: none!important;
             -moz-appearance: none!important;
-             border: 1px solid #F1F64C!important;
+             border: 1px solid var(--button_color)!important;
              appearance: none!important;
              border-radius: 50%!important;
              margin-right: 10px!important;
@@ -62,7 +76,7 @@ color: white;
 }
 
         input[type=checkbox]:checked {
-            background: #F1F64C!important;
+            background: var(--button_color)!important;
         }
         input[type=checkbox]:before{
             display: none!important;
@@ -90,6 +104,32 @@ color: white;
 
         }
 
+
+/* Date Placeholder */
+/* input[type="datetime-local"]::before { 
+    content: attr(data-placeholder);
+    width: 100%;
+} */
+/* input[type="datetime-local"]:focus::before,
+input[type="datetime-local"]:valid::before { display: none } */
+
+
+/* .btn:hover{
+
+} */
+
+
+
+.card{
+    background: rgb(217, 217, 217)
+}
+
+.details{
+    margin-top: -10px;
+}
+#bookNow{
+    font-size: 12px;
+}
 /* Deals input */
 .checkbox input[type="checkbox"]{
     background: var(--deals_button_bg)!important;
@@ -105,6 +145,7 @@ color: white;
 .email_input input[type="checkbox"]{
     border-radius: 0px!important;
     border: 1px solid var(--input_color)!important;
+    
 }
 table tr td, table tr th{
     background-color: rgba(255, 255, 255, 0) !important;
@@ -207,7 +248,22 @@ select {
     color: white;
   
 }
+.track_booking{
+    margin-top: -7rem;
+}
 
+
+/* To hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .right_div_top {
     text-align: center;
@@ -232,6 +288,13 @@ a{
 .btn{
     background: var(--button_color);
 }
+.btn:hover{
+    background: var(--deals_button_bg);
+    color: var(--button_color);
+}
+#payment_btn{
+    width: 58%!important;
+}
 .heading{
     font-size: 4rem;
     color: var(--button_color);
@@ -250,7 +313,7 @@ h1{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-top: -13rem;
-    margin-left: 10rem;
+    margin-left: 0rem;
 }
 .vr{
     /* border: 1px solid black!important; */
@@ -283,7 +346,7 @@ span{
 
 .reviews-container{
     margin-top: -100px;
-    margin-bottom:200px;
+    margin-bottom:40px;
 }
 .dp{
     width: 5rem;
@@ -379,9 +442,16 @@ span{
     /* height: auto; */
     
 }
-.footer-links{
-    text-overflow: ellipsis;
-    overflow: hidden;
+.footer-links a{
+    text-overflow: ellipsis!important;
+    overflow: hidden!important;
+    text-decoration: underline;
+}
+.footer-links li{
+    margin-top: 15px!important;
+}
+.footer-links a:hover{
+    color: blue;
 }
 
 .right_low_footer{
@@ -393,26 +463,80 @@ span{
 }
 
 .social-icons li a .fa{
-    background: white;
+    background: var(--right_div_color);
     color: var(--button_color);
     padding: 10px;
     border-radius: 50%;
 }
 
+.fa.fa-facebook:before {
+
+    margin-left: 4px;
+}
+.fa-youtube:before {
+   
+    margin-left: -3px;
+}
+
 .right_low_footer .copyright-text{
     font-size: 14px;
     margin-top: 1rem;
-    color: white;
+    color: var(--right_div_color);
 }
 .paragraph{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
+#privacyTerms ol li{
+    font-size: 15px;
+    
+}
+#privacyTerms p{
+    font-size: 15px;
+  
+}
+
+.terms ol {
+    
+    counter-reset:item;
+  }
+ .terms li{
+    display: inline-block;
+    font-size: 14px!important;
+    line-height: 20px;
+    margin-top: 20px;
+    
+  }
+.terms li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+  }
+#privacyTerms .terms-heading{
+    font-size: 20px!important;
+    color: var(--button_color);
+  }
+  .border-left h5{
+    font-size: 20px!important;
+    color: var(--button_color);
+  }
+  .container h1{
+    font-size: 2rem!important;
+  }
+  
+
+  #getQotes_select select{
+  }
 /* Sign in or sign up links */
 
-
-
+.close{
+    font-size: 2rem;
+    margin-right: 1px;
+    color: black!important;
+}
+#navbar a img{
+    width: 150px!important;
+}
 
 
 
@@ -425,10 +549,80 @@ span{
 @media screen and (max-width:480px){
     .double_lines{
         margin-left: 0;
-
+        width: 12rem!important;
+        margin-top: 0px;    
+        /* overflow-x: hidden; */
     }
     .col-sm-0{
         display: none!important;
     }
 }
 
+@media screen and (max-width:768px){
+    
+.account_pic{
+    width: 30px;
+    height: 30px;
+}
+.right_div_top h1{
+    font-size: 1.5rem!important;
+}
+#navbar .navbar-brand img{
+    width: 100px!important;
+}
+.right_div{
+    padding: 1rem!important;
+}
+.right_div p{
+    font-size:13px;
+}
+.email_input p{
+    margin-top: 20px!important;
+}
+#payment_btn{
+    width: 100%!important;
+}
+
+.childCta h4{
+    font-size: 1rem!important;
+}
+.childCta button{
+    width: 50% !important;
+}
+    .w-75{
+        width: 100%!important;
+    }
+    .privacyTerms .container-fluid .row{
+        width: 100%!important;
+    }
+    #privacyTerms{
+        padding: 10px 0px!important;
+    }
+    #privacyTerms ol li{
+        font-size: 13px;
+    }
+    #privacyTerms p{
+        font-size: 13px;
+      
+    }
+    #privacyTermsRow{
+        width: 100%!important;
+    }
+  
+    .right_low_footer{
+        display: none;
+    }
+    .left_low_footer{
+        margin-left: -30px;
+    }
+    .footer_low{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #getQotes_select .form-select{
+    font-size: 10px;
+}
+}
